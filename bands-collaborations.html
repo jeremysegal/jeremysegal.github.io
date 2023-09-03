@@ -2,6 +2,53 @@
 <html>
 <head>
 <style>
+    .frame {
+        position: relative;;
+  width: 79%;
+  margin: auto;
+}
+    .container {
+  position: relative;
+  max-height: 100%;
+  width: 300px;
+  padding: 15px;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: ghostwhite;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
      a {
     text-decoration:none;
     color: black;
@@ -59,7 +106,19 @@
     <h1><a href="index.html">Jeremy Segal</a></h1>
     <h2><a href="https://jeremysegal.bandcamp.com/" target="_blank" rel="noopener noreferrer"><span style="font-size: 18px;font-weight:normal;padding:20px">composition</span></a><a href="recording-mixing.html"><span style="font-size: 18px;font-weight:normal;padding:20px">Recording & Mixing</span></a></h2>
     <h2><a href="bands-collaborations.html"><span style="font-size: 18px;font-weight:normal;padding:20px">Bands & Collaborations</span></a><a href="bio.html"><span style="font-size: 18px;font-weight:normal;padding:20px">bio</span></a></h2>
-    <p class="body" style="font-style:italic; font-size:20px">info coming soon...</p>
-    <p style="border-color: mintcream;border-style: solid;border-width: 1px;">contact: jeremy[dot]s[dot]segal@gmail.com</p>
+  <div class="frame">
+    <span><div class="container" style="float:left;">
+        <a href="https://brixband.bandcamp.com/album/arkansas-blown-out-windows" target="_blank" rel="noopener noreferrer"><img src="Brix.jpeg" alt=Brix class="image">
+        <div class="overlay"><div class="text">BRIX<br><span style="font-size: 12px">indie-rock band formed in 2023</span></div></div></a></div></span>
+     <span><div class="container" style="float:right">
+        <a href="https://didionsbible.bandcamp.com/" target="_blank" rel="noopener noreferrer"><img src="DB.jpeg" alt="Didions Bible" class="image">
+        <div class="overlay"><div class="text">DIDIONS BIBLE<br><span style="font-size: 12px">art-rock band formed in 2017</span></div></div></a></div></span>
+    <span><div class="container" style="float:left">
+        <a href="https://segue.bandcamp.com/album/primary-ties" target="_blank" rel="noopener noreferrer"><img src="Segue.jpeg" alt=Segue class="image">
+        <div class="overlay"><div class="text">SEGUE<br><span style="font-size: 12px">indie-rock band turned synth-pop duo active from 2015-2022</span></div></div></a></div></span>
+     <span><div class="container" style="float:left">
+        <img src="SUP.jpg" alt=Segal/Uemoto/Padmanabham class="image">
+        <div class="overlay"><div class="text" style="font-size:16px">SEGAL/UEMOTO/PADMANABHAM<br><span style="font-size: 12px">electro-acoustic improv trio formed in 2023</span></div></div></a></div></span>
+    </div>
 </body>
 </html>
