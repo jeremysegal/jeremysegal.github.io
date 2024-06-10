@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html>
+<title>Jeremy Segal // CV</title>
+<link rel="icon" type="image/x-icon" href="index.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <style>
-a {
+#discography {padding-top: 10px}
+    a {
     text-decoration: none;
-    color: black;
+    color: deeppink;
     }
 a:hover {
     font-weight: bolder;
-    font-size: 110%;
+    font-size: 105%;
+    color: black;
 }
 h1 {
-    position: fixed;
-    margin-left: 79%;
+    height: fit-content;
+    margin-left: 0%;
+    margin-top: 20px;
     text-align: right;
-    top: 0;
-    padding-top: 1%;
-    padding-bottom: 1px;
-    padding-right: 3%;
-    font-size: 14px;
+    font-size: 15px;
     font-family: monospace;
+    border-style: none; border-width: 2px; border-bottom: fit-content; padding: 10px; border-color: deeppink; border-left: none; border-top: none; border-radius: 15px;
+    position: sticky; top: 20px;
+    box-shadow: 3px 4px pink
 }
+body
 .container {
- display: grid;
- grid-template-columns: 6fr 3fr;
- padding: 5px;
-}
+    display: grid;
+    grid-template-columns: 1fr 25fr 12fr 4fr 1fr;
+    background-color: white;
+    }
 .img {
-  max-width: 100%;
-  max-height: 100%;
-  padding-top: 10%;
-  padding-left: 3%;
+    width: 50%;
+    height: 50%;
+    padding-top: 0%;
+    padding-left: 3%;
 }
 .text {
-    padding-left: 7%;
+    padding-left: 0%;
     padding-top: 1%;
 }
-  .body {
+.body {
     max-width: 100%;
     text-align: left;
     font-family: monospace;
     font-size: 12px;
- }
+}
+.collapsible {text-decoration:none; 
+        color:deeppink; 
+        font-size: 15px;
+        font-family: monospace; 
+        border:none; 
+        background-color:white;
+        font-weight: bold;
+        padding: 0px;
+    }
+.active, .collapsible:hover {
+    font-weight: bolder;
+    font-size: 105%;
+    color: black;
+}
+.content {
+    color:black; 
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 0px;
+    display: none;
+    overflow: hidden;
+}
 </style>
 </head>
-<body>
-    <h1><a href="index.html" style="text-decoration:none; color:black">ABOUT</a><br><a href="cv.html" style="text-decoration:none; color:black">CV</a><br><a href="mailto:jeremy.s.segal@gmail.com" style="text-decoration:none; color:black">CONTACT</a></h1>
+<body style="background-color:ghostwhite;">
      <div class="container">
-        <div class="text">
+
+        <div><EMPTY></EMPTY></div>
+        
+      <div class="text">
             <p class="body" style="font-weight: bolder; padding-bottom:5px">Education</p>
             <p class="body">2023 - 2026 | Master of Sound Studies and Sonic Arts | Universität der Künste Berlin<br><br>2021 - 2022 | Bachelor of Music (1st Class Honours) | University of Western Australia<br><br>2015 - 2020 | Bachelor of Arts (English and Literary Studies and Electronic Music and Sound Design) | University of Western Australia<br><br></p>
             <p class="body" style="font-weight: bolder; padding-bottom:5px">Work</p>
             <p class="body">September 2022 | UWA Conservatorium of Music | Teaching (Electronic Music and Sound Design)<br><br>May 2021 - August 2023 | Cockburn Youth Centre | Music Activities Officer<br><br>2017 - present | Freelance Audio Engineer<br><br>2015 - present | Freelance Musician<br><br></p>
             <p class="body" style="font-weight: bolder; padding-bottom:5px">Awards, Commissions, Grants</p>
             <p class="body">September 2023 | Ian Potter Cultural Trust Emerging Artist Grant<br><br>June 2023 | Schenberg Fellowship (music composition)<br><br>December 2022 | TuneNoiseTune Project Fund (Tone List and Perth Jazz Society)<br><br>February 2022 | Audible Edge Festival of Sound Commission<br><br></p>
-            <p class="body" style="font-weight: bolder; padding-bottom:5px">Selected Discography</p>
+            <p class="body" style="font-weight: bolder; padding-bottom:5px" id="discography">Selected Discography</p>
             <p class="body">as Jeremy Segal</p>
             <p class="body">
                 <a href="https://jeremysegal.bandcamp.com/album/voice-rhythm-am-drone" target="_blank">Voice Rhythm AM Drone</a><br>
@@ -95,6 +127,30 @@ h1 {
             <p class="body" style="font-weight: bolder; padding-bottom:5px">Conferences, Seminars, Workshops</p>
             <p class="body">April - June 2023 | WAM Musicians In Residence | 10 week workshop program at Sheoak Grove Primary School<br><br>November 2022 | Musicological Society of Australia WA Conference | <span style="font-style:italic">The Voice-Object in Carl Stone's Shing Kee </span>(Awarded Best Student Paper)<br><br>August 2022 | Australasian Computer Music Conference | <span style="font-style:italic">Voice </span>and <span font-style="italic">Drone </span>(fixed media compositions)<br><br>September 2021 | UWA Critical Theory Reading Club | Acousmatic Sound in <span style="font-style: italic">The Conversation </span>(1974)<br><br>March 2021 | Catch Music | Introduction to Sound Recording<br><br></p>
         </div>
+
+        <div><EMPTY></EMPTY></div>
+
+        <h1><a href="index.html">ABOUT</a><br><button type="button" class="collapsible">PROJECTS</button><div class="content"><p style="font-size: 5px"></p><a href="https://90mil.berlin/radioshows/" target="_blank">Soundplant Datamind</a><br><p style="font-size: 5px"></p><a href="https://jeremysegal.bandcamp.com/" target="_blank">Solo Music</a><br><p style="font-size: 5px"></p><a href="https://segue.bandcamp.com/album/primary-ties/" target="_blank">Segue</a><br><p style="font-size: 5px"></p><a href="cv.html#discography">Recording & Mixing</a><br><p style="font-size: 5px"></p><a href="https://didionsbible.bandcamp.com/" target="_blank">Didion's Bible</a><br><p style="font-size: 5px"></p><a href="https://brixband.bandcamp.com/" target="_blank">Brix</a></div><br><a href="cv.html">CV</a><br><a href="mailto:jeremy.s.segal@gmail.com">CONTACT</a></h1>
+
+        <div><EMPTY></EMPTY></div>
+
     </div>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+    }
+    </script>
 </body>
 </html>

@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html>
+<title>Jeremy Segal // About</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <style>
     a {
     text-decoration: none;
-    color: black;
+    color: deeppink;
     }
 a:hover {
     font-weight: bolder;
-    font-size: 110%;
+    font-size: 105%;
+    color: black;
 }
 h1 {
-    position: fixed;
-    margin-left: 79%;
+    height: fit-content;
+    margin-left: 0%;
+    margin-top: 20px;
     text-align: right;
-    top: 0;
-    padding-top: 1%;
-    padding-bottom: 1px;
-    font-size: 14px;
+    font-size: 15px;
     font-family: monospace;
+    border-style: none; border-width: 2px; border-bottom: fit-content; padding: 10px; border-color: deeppink; border-left: none; border-top: none; border-radius: 15px;
+    position: sticky; top: 20px;
+    box-shadow: 3px 4px pink
 }
 body
 .container {
     display: grid;
-    grid-template-columns: 4fr 2fr 1fr;
+    grid-template-columns: 1fr 25fr 12fr 4fr 1fr;
+    background-color: white;
     }
 .img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 50%;
+    height: 50%;
     padding-top: 0%;
     padding-left: 3%;
 }
 .text {
-    padding-left: 7%;
+    padding-left: 0%;
     padding-top: 1%;
 }
 .body {
@@ -42,22 +46,71 @@ body
     font-family: monospace;
     font-size: 12px;
 }
+.collapsible {text-decoration:none; 
+        color:deeppink; 
+        font-size: 15px;
+        font-family: monospace; 
+        border:none; 
+        background-color:white;
+        font-weight: bold;
+        padding: 0px;
+    }
+.active, .collapsible:hover {
+    font-weight: bolder;
+    font-size: 105%;
+    color: black;
+}
+.content {
+    color:black; 
+    font-size: 12px;
+    font-family: monospace;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 0px;
+    display: none;
+    overflow: hidden;
 }
 </style>
 </head>
-<body>
-    <h1><a href="index.html" style="text-decoration:none; color:black">ABOUT</a><br><a href="cv.html" style="text-decoration:none; color:black">CV</a><br><a href="mailto:jeremy.s.segal@gmail.com" style="text-decoration:none; color:black">CONTACT</a></h1>
+<body style="background-color:ghostwhite;">
      <div class="container">
+
+        <div><EMPTY></EMPTY></div>
+        
         <div class="text"><p class="body">
-            <img style="width: 60%; padding-bottom:15px;" src="Index.jpg" style="width: 95%;" alt="Jeremy Segal. Photo by Josh Wells."></img><br>
-            <span style="font-weight: bolder">Jeremy Segal</span> is a musician, sound artist, and audio engineer from Perth, Western Australia, now living in Berlin. His work includes electronic and electroacoustic music, sound installations, and indie-rock bands.</p>
+            <img style="width: 60%; padding-bottom:0px;" src="Index.jpg" style="width: 95%;" alt="Jeremy Segal. Photo by Josh Wells."></img></p>
+            <p class="body"><span style="font-weight: bolder; color:deeppink">Jeremy Segal</span> is a musician, sound artist, and audio engineer from Perth, Western Australia, now living in Berlin. His work includes electronic and electroacoustic music, sound installations, and indie-rock bands.</p>
         <p class="body">Jeremy grew up playing guitar, forming his first bands during indie-rock’s last hurrah and psychedelia’s short-lived revival. He began recording and mixing his own music in his late teens, culminating in three EPs and an album with dream-pop project Segue (fka Segue Safari) in his early twenties. Since 2017 he has played bass in art-rock band Didion’s Bible, and in 2023 he formed Brix with close friends Daniel Veneklaas, Jameson Feakes, and Thomas Freeman.</p>
         <p class="body">Jeremy first ventured into electronic and electro-acoustic music in 2020 with Four Footprints, a collection of ambient pieces exploring environmental sound as a basis for compositional process. In 2021 he released Plateaux, an album of electronic music dealing primarily with sonic transformation and gradual process. In 2022 he worked extensively with vocal sound material and algorithmic composition, first with Voice Rhythm AM Drone, presented in 6.1 surround at Callaway Auditorium, and then with Speak… Ah, a quadraphonic text-to-speech piece commissioned by Tone List for their Audible Edge Festival of Sound. In 2023, with support from Tone List and Perth Jazz Society, he formed an electroacoustic improvisation trio with Naoko Uemoto and Josiah Padmanabham.</p>
         <p class="body">Jeremy has recorded and mixed music in professional studios, domestic spaces, and live performance venues. He enjoys capturing sound in unconventional situations, and often collaborates with artists and bands who produce their own work. He has worked on audiobooks and live performance videos, and teaches music and sound production to students of all ages.</p>
         <p class="body">Jeremy studied music and literature at the University of Western Australia, and is currently studying  Sound Studies and Sonic Arts at Universität der Künste Berlin.</p>
-        <p class="body">contact: jeremy[dot]s[dot]segal@gmail.com</p>
+        <p class="body" style="font-weight:bold; color:deeppink">contact: jeremy[dot]s[dot]segal@gmail.com</p>
         </div>
+
+        <div><EMPTY></EMPTY></div>
+
+        <h1><a href="index.html">ABOUT</a><br><button type="button" class="collapsible">PROJECTS</button><div class="content"><p style="font-size: 5px"></p><a href="https://90mil.berlin/radioshows/" target="_blank">Soundplant Datamind</a><br><p style="font-size: 5px"></p><a href="https://jeremysegal.bandcamp.com/" target="_blank">Solo Music</a><br><p style="font-size: 5px"></p><a href="https://segue.bandcamp.com/album/primary-ties/" target="_blank">Segue</a><br><p style="font-size: 5px"></p><a href="cv.html#discography">Recording & Mixing</a><br><p style="font-size: 5px"></p><a href="https://didionsbible.bandcamp.com/" target="_blank">Didion's Bible</a><br><p style="font-size: 5px"></p><a href="https://brixband.bandcamp.com/" target="_blank">Brix</a></div><br><a href="cv.html">CV</a><br><a href="mailto:jeremy.s.segal@gmail.com">CONTACT</a></h1>
+
+        <div><EMPTY></EMPTY></div>
+
     </div>
-    </div>
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+    }
+    </script>
 </body>
 </html>
