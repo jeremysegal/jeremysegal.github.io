@@ -4,33 +4,35 @@
 <link rel="icon" type="image/x-icon" href="index.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <style>
-#discography {padding-top: 10px}
+#discography {padding-top: 15px}
     a {
     text-decoration: none;
     color: black;
     }
 a:hover {
-    font-weight: normal;
+    font-weight: bolder;
     font-size: 105%;
     color: black;
 }
 h1 {
     height: fit-content;
     margin-left: 0%;
-    margin-top: 20px;
     text-align: right;
     font-size: 16px;
-    font-family: monospace;
+    font-family: "merriweather sans";
     font-weight: normal;
     border-style: none; border-width: 0px; border-bottom: fit-content; padding: 10px; border-color: deeppink; border-left: none; border-top: none; border-radius: 15px;
-    position: sticky; top: 20px;
+    position: sticky; top: 1%;
     box-shadow: 0px 0px pink
 }
 body
 .container {
     display: grid;
-    grid-template-columns: 1fr 28fr 1fr 5fr 1fr;
+    grid-template-columns: 1fr 21fr 1fr 5fr 1fr;
     }
 .img {
     width: 50%;
@@ -45,13 +47,13 @@ body
 .body {
     max-width: 100%;
     text-align: left;
-    font-family: monospace;
+    font-family: "merriweather sans";
     font-size: 12px;
 }
 .collapsible {text-decoration:none; 
         color:black; 
         font-size: 16px;
-        font-family: monospace; 
+        font-family: "merriweather sans";
         border:none; 
         font-weight: normal;
         padding: 0px;
@@ -65,7 +67,7 @@ body
 .content {
     color:black; 
     font-size: 12px;
-    font-family: monospace;
+    font-family: "merriweather sans";
     font-weight: normal;
     text-transform: uppercase;
     text-align: right;
@@ -76,12 +78,12 @@ body
 </style>
 </head>
 <body style="background-color:ghostwhite;">
-     <div class="container">
+<div class="container">
 
-        <div><EMPTY></EMPTY></div>
-        
-      <div class="text">
-            <br><p class="body" style="font-weight: bolder; padding-bottom:5px">Education</p>
+    
+    <div><EMPTY></EMPTY></div>    
+    <div class="text" style="padding-top:2%;">
+            <p class="body" style="font-weight: bolder; padding-bottom:5px">Education</p>
             <p class="body">2023 - 2026 | Master of Sound Studies and Sonic Arts | Universität der Künste Berlin<br><br>2021 - 2022 | Bachelor of Music (1st Class Honours) | University of Western Australia<br><br>2015 - 2020 | Bachelor of Arts (English and Literary Studies and Electronic Music and Sound Design) | University of Western Australia<br><br></p>
             <p class="body" style="font-weight: bolder; padding-bottom:5px">Work</p>
             <p class="body">September 2022 | UWA Conservatorium of Music | Teaching (Electronic Music and Sound Design)<br><br>May 2021 - August 2023 | Cockburn Youth Centre | Music Activities Officer<br><br>2017 - present | Freelance Audio Engineer<br><br>2015 - present | Freelance Musician<br><br></p>
@@ -134,8 +136,7 @@ body
         <h1><a href="index.html">ABOUT</a><br><button type="button" class="collapsible">PROJECTS</button><div class="content"><p style="font-size: 5px"></p><a href="https://90mil.berlin/radioshows/" target="_blank">Soundplant Datamind</a><br><p style="font-size: 5px"></p><a href="https://jeremysegal.bandcamp.com/" target="_blank">Solo Music</a><br><p style="font-size: 5px"></p><a href="https://segue.bandcamp.com/album/primary-ties/" target="_blank">Segue</a><br><p style="font-size: 5px"></p><a href="cv.html#discography">Recording & Mixing</a><br><p style="font-size: 5px"></p><a href="https://didionsbible.bandcamp.com/" target="_blank">Didion's Bible</a><br><p style="font-size: 5px"></p><a href="https://brixband.bandcamp.com/" target="_blank">Brix</a></div><br><a href="cv.html">CV</a><br><a href="mailto:jeremy.s.segal@gmail.com">CONTACT</a></h1>
 
         <div><EMPTY></EMPTY></div>
-
-    </div>
+</div>
 
     <script>
     var coll = document.getElementsByClassName("collapsible");
