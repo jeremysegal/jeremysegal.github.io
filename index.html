@@ -5,24 +5,25 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Faculty+Glyphic&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <style>
+* {background-color: black; color: white}
 a {
     text-decoration: none;
-    color: black;
 }
 a:hover {
     font-weight: bolder;
     font-size: 105%;
-    color: black;
+    color: teal;
 }
 h1 {
     height: fit-content;
     margin-left: 0%;
     text-align: right;
     font-size: 16px;
-    font-family: "merriweather sans";
-    font-weight: normal;
+    font-family: "B612", serif;
+    font-weight: 400;
+    font-style: normal;
     border-style: none; border-width: 0px; border-bottom: fit-content; padding: 10px; border-color: deeppink; border-left: none; border-top: none; border-radius: 15px;
     position: sticky; top: 1%;
     box-shadow: 0px 0px pink
@@ -30,7 +31,7 @@ h1 {
 body
 .container {
     display: grid;
-    grid-template-columns: 1fr 21fr 1fr 5fr 1fr;
+    grid-template-columns: 3fr 15fr 1fr 9fr 1fr;
     }
 @media only screen and (max-width: 600px) {
   .container {disply: grid; grid-template-columns: 1fr 25fr 12fr 4fr 1fr;}
@@ -41,7 +42,7 @@ body
   .img {max-width: 90%}
 }
 @media only screen and (min-width: 600px) {
-  .img {max-width: 43%}
+  .img {max-width: 45%; padding-top: 10%}
 }
 .text {
     padding-left: 0%;
@@ -50,8 +51,9 @@ body
 .body {
     max-width: 90%;
     text-align: left;
-    font-family: "merriweather sans";
-    font-weight: normal;
+    font-family: "B612", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 13px;
 }
 .collapsible {text-decoration:none; 
@@ -87,19 +89,17 @@ body
         <div><EMPTY></EMPTY></div>
         <div class="text" style="padding-top:7%;"><p class="body"></p>
             <img class="img" src="Index.jpg" alt="Jeremy Segal."></img>
-            <p class="body" style="padding-right:0%"><span style="font-weight: bolder; color:slategrey;">Jeremy Segal</span> is a musician, artist, and sound engineer from Perth, Western Australia, now based in Berlin. His recent work includes radio collage, misused electronics, and a digitally controlled acoustic drum kit. His not so recent work includes playing in too many bands at the same time.
+            <p class="body" style="padding-right:0%"><span style="font-weight: bolder;">Jeremy Segal</span> is a musician, artist, and sound engineer from Perth, Western Australia, now based in Berlin. His recent work includes computer music, experimental radio, live electronics, and a digitally controlled acoustic drum kit. His not so recent work includes playing in too many bands at the same time.
             <br><br>
-            As a freelance sound engineer Jeremy offers professional recording, mixing, and mastering services. He works in studios and on location, and particularly enjoys capturing sound in unconventional spaces. Jeremy offers a hybrid approach to production, often moving between recording, mixing, arrangement, and sound design depending on the needs of the artist.
+            As a freelance sound engineer Jeremy offers professional recording, mixing, and mastering services. He works in studios and on location, and particularly enjoys documenting sound in unconventional spaces.
             </p>
-        <p class="body" style="font-weight:bold; color:slategrey;">contact: jeremy[dot]s[dot]segal@gmail.com</p>
+        <p class="body" style="font-weight:bold;">contact: jeremy[dot]s[dot]segal@gmail.com</p>
         </div>
 
         <div><EMPTY></EMPTY></div>
 
         <h1>
-            <a href="index.html">ABOUT</a><br>
-            <a href="cv.html">CV</a><br>
-            <a href="mailto:jeremy.s.segal@gmail.com">CONTACT</a>
+            <a href="index.html">about</a><p style="font-size:10px">///</p><a href="JS_CV.pdf">cv</a><br>
         </h1>
 
         <div><EMPTY></EMPTY></div>
